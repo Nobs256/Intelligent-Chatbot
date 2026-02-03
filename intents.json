@@ -1,0 +1,632 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "Whats up",
+                "Hey",
+                "greetings",
+                "Good morning",
+                "Good evening",
+                "Hello there",
+                "Hi chatbot"
+            ],
+            "responses": [
+                "Hello!",
+                "Good to see you again!",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "See you later",
+                "Goodbye",
+                "I am Leaving",
+                "Have a Good day",
+                "bye",
+                "cao",
+                "see ya",
+                "Bye bye",
+                "I'm out",
+                "Catch you later",
+                "End chat"
+            ],
+            "responses": [
+                "Talk to you later",
+                "Goodbye!",
+                "Feel free to ask more question any time.. "
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me",
+                "Appreciate it",
+                "Thanks a lot",
+                "Thank you so much",
+                "Cheers"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "view_marks",
+            "patterns": [
+                "How do I view my marks?",
+                "Show me my grades",
+                "Where can I find my results?",
+                "Check my exam scores",
+                "I want to see my report card",
+                "Check my results",
+                "See my grades",
+                "What did I get in math?",
+                "Report card",
+                "My scores",
+                "marks view"
+            ],
+            "responses": [
+                "You can view your marks by navigating to the 'Academics' section and then clicking on 'Marks' or 'Grades'.",
+                "To see your results, please go to the 'Academics' menu and select the 'View Marks' option."
+            ]
+        },
+        {
+            "tag": "download_transcript",
+            "patterns": [
+                "How can I download my transcript?",
+                "Where do I get my academic transcript?",
+                "I need a copy of my transcript",
+                "Get transcript",
+                "Print transcript",
+                "Academic record download"
+            ],
+            "responses": [
+                "You can download your academic transcript from the 'Academics' or 'Reports' section. Look for an option like 'Download Transcript' or 'Generate Report'.",
+                "To get your transcript, go to the 'Reports' or 'Academics' section and choose the transcript option."
+            ]
+        },
+        {
+            "tag": "view_timetable",
+            "patterns": [
+                "Show me my class schedule",
+                "Where is my timetable?",
+                "What is my schedule for today?",
+                "View my timetable",
+                "Class routine",
+                "When is my next class?",
+                "Daily schedule",
+                "Time table"
+            ],
+            "responses": [
+                "Your class schedule is available under the 'Timetable' section in the main menu.",
+                "You can check your daily schedule by visiting the 'Timetable' page."
+            ]
+        },
+        {
+            "tag": "check_attendance",
+            "patterns": [
+                "How do I check my attendance?",
+                "Show my attendance record",
+                "Where can I see my attendance?",
+                "Am I present?",
+                "Attendance history",
+                "Check if I was marked present",
+                "My attendance"
+            ],
+            "responses": [
+                "Your attendance record can be found in the 'Attendance' section. You can see a summary and detailed view there.",
+                "Navigate to the 'Attendance' menu to view your attendance history."
+            ]
+        },
+        {
+            "tag": "view_fees",
+            "patterns": [
+                "How much are my school fees?",
+                "Check my fee balance",
+                "Where can I see my payment history?",
+                "View fee structure",
+                "Do I owe money?",
+                "School fees",
+                "Tuition balance",
+                "Payment details"
+            ],
+            "responses": [
+                "For information on your fees, please visit the 'Billing' or 'Fees' section. You can see outstanding balances and payment history there.",
+                "All fee-related details are in the 'Fees' section of your portal."
+            ]
+        },
+        {
+            "tag": "submit_assignment",
+            "patterns": [
+                "How do I submit an assignment?",
+                "Where to upload my homework?",
+                "Assignment submission",
+                "Turn in homework",
+                "Upload assignment",
+                "Submit my work",
+                "Hand in assignment"
+            ],
+            "responses": [
+                "To submit an assignment, go to the 'Assignments' section, select the assignment you want to submit, and use the upload option to attach your file.",
+                "You can upload your assignments through the 'Assignments' portal. Look for a 'Submit' button next to the assignment details."
+            ]
+        },
+        {
+            "tag": "view_assignments",
+            "patterns": [
+                "Where can I see my assignments?",
+                "Show me my pending homework",
+                "What are the current assignments?",
+                "Do I have homework?",
+                "Pending tasks",
+                "My assignments",
+                "What is due?"
+            ],
+            "responses": [
+                "You can find all your current and past assignments in the 'Assignments' section of the portal.",
+                "Navigate to 'Academics' and then 'Assignments' to see your homework."
+            ]
+        },
+        {
+            "tag": "school_events",
+            "patterns": [
+                "What are the upcoming school events?",
+                "Show me the school calendar",
+                "Are there any events this month?",
+                "School calendar",
+                "Holidays",
+                "What's happening at school?",
+                "Events list"
+            ],
+            "responses": [
+                "Check the 'Calendar' or 'Events' section on the dashboard to see all upcoming school events.",
+                "The school calendar has all the information about upcoming events and holidays."
+            ]
+        },
+        {
+            "tag": "upload_file",
+            "patterns": [
+                "How do I upload a file?",
+                "Where can I upload documents?",
+                "File upload help",
+                "Attach document",
+                "Upload pdf",
+                "How to put file on portal"
+            ],
+            "responses": [
+                "You can upload files in sections like 'Assignments' or 'Documents'. Look for a drag-and-drop area or an 'Upload File' button.",
+                "To upload a document, find the relevant section and use the file upload form provided."
+            ]
+        },
+        {
+            "tag": "profile",
+            "patterns": [
+                "How can I see my profile?",
+                "Where can I edit my profile?",
+                "View my personal details",
+                "My account",
+                "Change profile pic",
+                "Update my info",
+                "User details"
+            ],
+            "responses": [
+                "You can access your profile by clicking on your name or profile picture at the top right corner of the page.",
+                "Your profile details can be viewed and edited in the 'My Profile' section."
+            ]
+        },
+        {
+            "tag": "login_help",
+            "patterns": [
+                "I forgot my password",
+                "I can't log in",
+                "How to reset my password?",
+                "Login issues",
+                "Reset password",
+                "Cannot access account",
+                "Forgot username",
+                "Unlock account"
+            ],
+            "responses": [
+                "If you've forgotten your password, you can use the 'Forgot Password' link on the login page to reset it.",
+                "For login issues, please try resetting your password or contact the school administration for assistance."
+            ]
+        },
+        {
+            "tag": "admissions",
+            "patterns": [
+                "How to apply for admission?",
+                "New student registration",
+                "Admission process",
+                "Apply for school",
+                "Join the school",
+                "Registration form",
+                "Enrollment"
+            ],
+            "responses": [
+                "For new admissions, please visit the 'Admissions' section on the school's public website. You will find the application form and instructions there.",
+                "The admission process details are available on the 'Admissions' page of our website."
+            ]
+        },
+        {
+            "tag": "courses",
+            "patterns": [
+                "What courses are available?",
+                "Show me the list of subjects",
+                "View available courses",
+                "Subject list",
+                "What classes are offered?",
+                "Curriculum"
+            ],
+            "responses": [
+                "You can find a list of all available courses and subjects under the 'Academics' or 'Courses' section of the portal."
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "What can you do?",
+                "How can you help me?",
+                "What are your features?",
+                "Help",
+                "Support",
+                "I need assistance",
+                "Guide me",
+                "What commands work?"
+            ],
+            "responses": [
+                "I can help you with questions about using the Quickschool system. For example, you can ask me how to view your marks, check your timetable, or submit an assignment."
+            ]
+        },
+        {
+            "tag": "create_assignment",
+            "patterns": [
+                "How to create an assignment?",
+                "New assignment",
+                "Add homework",
+                "Create homework",
+                "Make new assignment",
+                "Assign homework",
+                "Set task for students"
+            ],
+            "responses": [
+                "To create a new assignment, go to the 'Assignments' section and click on the 'Create Assignment' button.",
+                "You can create new assignments from the 'Academics' -> 'Assignments' menu. Look for a 'New' or 'Create' button."
+            ]
+        },
+        {
+            "tag": "grade_assignment",
+            "patterns": [
+                "How do I grade assignments?",
+                "Grade student work",
+                "Enter grades for an assignment",
+                "Mark assignments",
+                "Score homework",
+                "Give marks",
+                "Grading",
+                "Assess students"
+            ],
+            "responses": [
+                "To grade assignments, navigate to the 'Gradebook' or 'Assignments' section, select the assignment you want to grade, and you will see the list of submissions where you can enter grades.",
+                "You can find the grading interface in the 'Gradebook' or under each specific 'Assignment'."
+            ]
+        },
+        {
+            "tag": "take_attendance",
+            "patterns": [
+                "How to take attendance?",
+                "Mark student attendance",
+                "Take roll call",
+                "Manage attendance",
+                "Roll call",
+                "Mark present",
+                "Record attendance",
+                "Class register"
+            ],
+            "responses": [
+                "To take attendance, go to the 'Attendance' section and select your class. You can then mark each student as present, absent, or late.",
+                "Attendance can be taken from the 'Attendance' module. Select the date and class to begin."
+            ]
+        },
+        {
+            "tag": "teacher_communication",
+            "patterns": [
+                "How to message parents?",
+                "Send a message to a student",
+                "Communicate with parents",
+                "Contact a student",
+                "Email parent",
+                "Message student",
+                "Chat with guardian",
+                "Send note to home"
+            ],
+            "responses": [
+                "You can send messages to parents and students through the 'Messaging' or 'Communication' section of the portal.",
+                "To communicate with parents or students, use the internal messaging system found under the 'Communication' menu."
+            ]
+        },
+        {
+            "tag": "view_class_list",
+            "patterns": [
+                "How to see my class list?",
+                "View students in my class",
+                "Show my class roster",
+                "Get my class list",
+                "Who is in my class?",
+                "Student list",
+                "Class members",
+                "Roster"
+            ],
+            "responses": [
+                "You can view your class list by going to the 'My Classes' or 'Academics' section and selecting the class you want to view.",
+                "Your class rosters are available under the 'Classes' menu."
+            ]
+        },
+        {
+            "tag": "admin_manage_users",
+            "patterns": [
+                "How to add a new student?",
+                "How to create a teacher account?",
+                "Manage users",
+                "Add a new user",
+                "Edit user profile",
+                "Delete a user",
+                "Reset user password",
+                "Create student",
+                "Delete teacher",
+                "Modify user",
+                "User accounts"
+            ],
+            "responses": [
+                "To manage users, go to the 'Admin' or 'Users' section. From there you can add, edit, or remove students, teachers, and other staff.",
+                "User management is handled in the 'Admin Panel' under 'User Accounts'. You can also reset passwords from there."
+            ]
+        },
+        {
+            "tag": "admin_manage_classes",
+            "patterns": [
+                "How to create a new class?",
+                "Assign a teacher to a class",
+                "Manage subjects",
+                "Add a new course",
+                "Edit class details",
+                "Setup class",
+                "New subject",
+                "Assign course",
+                "Class configuration"
+            ],
+            "responses": [
+                "Class and subject management is available in the 'Admin' section under 'Academics' or 'Classes'. You can create new classes, assign teachers, and manage subjects there.",
+                "To create or edit classes, navigate to 'Admin' -> 'Classes & Subjects'."
+            ]
+        },
+        {
+            "tag": "admin_reports",
+            "patterns": [
+                "How to generate a financial report?",
+                "Create an academic report",
+                "View school-wide reports",
+                "Generate attendance report",
+                "Export grades",
+                "Get reports",
+                "School statistics",
+                "Download data",
+                "Analytics"
+            ],
+            "responses": [
+                "You can generate various reports from the 'Reports' section in the Admin dashboard. You can find financial, academic, and attendance reports there.",
+                "For reporting, please visit the 'Admin' -> 'Reports' module to generate and export data."
+            ]
+        },
+        {
+            "tag": "admin_admissions",
+            "patterns": [
+                "How to manage admissions?",
+                "Review new applications",
+                "Handle student admissions",
+                "Accept or reject an application",
+                "Process applications",
+                "New enrollments",
+                "Approve student",
+                "Admission requests"
+            ],
+            "responses": [
+                "Admission management is handled in the 'Admissions' section of the admin portal. You can review applications and manage the admission process there.",
+                "To manage new student admissions, go to the 'Admin' -> 'Admissions' section."
+            ]
+        },
+        {
+            "tag": "admin_fee_management",
+            "patterns": [
+                "How to set up fee structures?",
+                "Manage student fees",
+                "Configure billing",
+                "Create a new fee invoice",
+                "View payment status",
+                "Billing setup",
+                "Invoice generation",
+                "Fee structure",
+                "Manage payments"
+            ],
+            "responses": [
+                "Fee management and billing configurations can be found in the 'Finance' or 'Billing' section of the Admin panel.",
+                "To configure school fees, create invoices, and track payments, navigate to 'Admin' -> 'Finance' -> 'Fee Management'."
+            ]
+        },
+        {
+            "tag": "admin_settings",
+            "patterns": [
+                "How to change school settings?",
+                "Configure system settings",
+                "Manage school information",
+                "Set academic year",
+                "Update school logo",
+                "System config",
+                "School details",
+                "Portal settings",
+                "General configuration"
+            ],
+            "responses": [
+                "You can manage school-wide settings from the 'Settings' or 'Configuration' area in the Admin panel.",
+                "To update school information and system settings, go to 'Admin' -> 'Settings'."
+            ]
+        },
+        {
+            "tag": "library_search",
+            "patterns": [
+                "Search for a book",
+                "Is this book available?",
+                "Library catalog",
+                "Check book status",
+                "Reserve a book",
+                "Find book",
+                "Book availability",
+                "Library search",
+                "Locate book"
+            ],
+            "responses": [
+                "You can search for books in the 'Library' section. You can also check availability and reserve books there.",
+                "Visit the 'Library' module to search the catalog and manage your book loans."
+            ]
+        },
+        {
+            "tag": "apply_leave",
+            "patterns": [
+                "How to apply for leave?",
+                "I need to take a day off",
+                "Leave application form",
+                "Request leave of absence",
+                "Request time off",
+                "Sick leave",
+                "Holiday request",
+                "Absent form"
+            ],
+            "responses": [
+                "To apply for leave, go to 'Attendance' or 'Leave Management' and click on 'Apply for Leave'. Fill out the form and submit.",
+                "You can submit a leave request through the 'Leave' section on your dashboard."
+            ]
+        },
+        {
+            "tag": "exam_schedule",
+            "patterns": [
+                "When are my exams?",
+                "Show exam dates",
+                "Exam timetable",
+                "Date sheet",
+                "Exam dates",
+                "Test schedule",
+                "Finals timetable",
+                "When is the exam?"
+            ],
+            "responses": [
+                "The exam schedule is published under the 'Academics' -> 'Examinations' section.",
+                "You can view upcoming exam dates and schedules in the 'Examinations' module."
+            ]
+        },
+        {
+            "tag": "transport_info",
+            "patterns": [
+                "Bus route details",
+                "My bus stop",
+                "Transport timings",
+                "School bus schedule",
+                "Bus timings",
+                "Transport route",
+                "Pick up time",
+                "Bus number"
+            ],
+            "responses": [
+                "Transport details, including bus routes and timings, are available in the 'Transport' section.",
+                "Check the 'Transport' module for information on your assigned bus route and pickup times."
+            ]
+        },
+        {
+            "tag": "approve_leave",
+            "patterns": [
+                "Approve student leave",
+                "Review leave requests",
+                "Student leave applications",
+                "Grant leave",
+                "Reject leave",
+                "Leave approval",
+                "Manage requests"
+            ],
+            "responses": [
+                "Teachers can review and approve student leave requests in the 'Leave Management' or 'Class Teacher' section.",
+                "Go to 'Attendance' -> 'Leave Requests' to approve or reject student leave applications."
+            ]
+        },
+        {
+            "tag": "view_payslip",
+            "patterns": [
+                "View my payslip",
+                "Check salary",
+                "Download salary slip",
+                "My payroll details",
+                "Salary slip",
+                "My wages",
+                "Payment advice",
+                "Income statement"
+            ],
+            "responses": [
+                "You can view and download your payslips from the 'HR' or 'Payroll' section of your profile.",
+                "Salary details are available in the 'My Profile' -> 'Payroll' area."
+            ]
+        },
+        {
+            "tag": "manage_staff_attendance",
+            "patterns": [
+                "Track staff attendance",
+                "Teacher attendance report",
+                "Mark staff absent",
+                "Manage employee attendance",
+                "Staff presence",
+                "Employee tracking",
+                "Worker attendance",
+                "HR attendance"
+            ],
+            "responses": [
+                "Admin can manage staff attendance under the 'HR' -> 'Attendance' module.",
+                "To track and manage staff attendance, navigate to the 'HR' section in the Admin panel."
+            ]
+        },
+        {
+            "tag": "broadcast_message",
+            "patterns": [
+                "Send bulk SMS",
+                "Email all parents",
+                "Broadcast notification",
+                "Send school alert",
+                "Emergency announcement",
+                "Mass email",
+                "School wide alert",
+                "Notify everyone",
+                "SMS broadcast"
+            ],
+            "responses": [
+                "You can send bulk messages or emails via the 'Communication' -> 'Broadcast' tool.",
+                "To send alerts to parents, students, or staff, use the 'Broadcast' feature in the 'Communication' module."
+            ]
+        },
+        {
+            "tag": "unknown",
+            "patterns": [],
+            "responses": [
+                "I'm sorry, I don't understand. Can you rephrase?",
+                "I'm not sure how to respond to that. Could you ask me something else?",
+                "My apologies, I can't seem to find an answer for that."
+            ]
+        }
+    ]
+}

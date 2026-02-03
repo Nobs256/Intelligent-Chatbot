@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .feedback-like {
+            color: green;
+            font-weight: bold;
+        }
+        .feedback-dislike {
+            color: red;
+            font-weight: bold;
+        }
+        .nav-link {
+            display: block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .correction-form {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        .correction-form select, .correction-form button {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .correction-form button {
+            background-color: #f0ad4e;
+            color: white;
+            cursor: pointer;
+            border-color: #eea236;
+        }
+        .correction-form button:hover {
+            background-color: #ec971f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="nav-link">&larr; Back to Chatbot</a>
+        <h1>Feedback Review</h1>
+        {% if feedback %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>User Message</th>
+                        <th>Bot Response</th>
+                        <th>Predicted Intent</th>
+                        <th>Feedback</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in feedback %}
+                    <tr>
+                        <td>{{ item.timestamp }}</td>
+                        <td>{{ item.user_message }}</td>
+                        <td>{{ item.bot_response }}</td>
+                        <td>{{ item.predicted_intent }}</td>
+                        <td class="{% if item.feedback == 'like' %}feedback-like{% else %}feedback-dislike{% endif %}">{{ item.feedback | upper }}</td>
+                        <td>
+                            {% if item.feedback == 'dislike' %}
+                                <form action="{{ url_for('correct_intent') }}" method="POST" class="correction-form">
+                                    <input type="hidden" name="user_message" value="{{ item.user_message }}">
+                                    <select name="correct_intent">
+                                        {% for intent_tag in all_intents %}
+                                            <option value="{{ intent_tag }}" {% if intent_tag == 'unknown' %}selected{% endif %}>
+                                                {{ intent_tag }}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                    <button type="submit">Add Pattern</button>
+                                </form>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p style="text-align: center;">No feedback has been submitted yet.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
