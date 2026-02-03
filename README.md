@@ -11,6 +11,16 @@ A web-based chatbot designed to assist users of a school management system. Buil
 -   **One-Click Retraining**: Administrators can correct the bot's mistakes directly from the dashboard. Disliked responses can be reassigned to the correct intent, which automatically updates the training data file.
 -   **Optimized Training**: Implements a learning rate scheduler for more stable and effective model training.
 
+## Screenshots
+
+**Main Chat Interface**
+*A clean, intuitive interface for users to interact with the chatbot.*
+![Chat Interface](screenshots/chat_interface.png)
+
+**Feedback Review Dashboard**
+*Administrators can easily review feedback, spot incorrect responses (highlighted in red), and add the user's message to the correct intent with a single click.*
+![Feedback Review Dashboard](screenshots/feedback_dashboard.png)
+
 ## Technology Stack
 
 -   **Backend**: Python, Flask
@@ -32,6 +42,7 @@ chatbot/
 │   └── templates/
 │       ├── index.html      # The main chatbot user interface.
 │       └── review.html     # The admin feedback review dashboard.
+├── screenshots/            # Contains screenshots for the README.
 └── README.md               # This file.
 ```
 
